@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Demo from "./components/1_setState/index";
+import Demo from "./components/3_setHook/index";
 
 export default class App extends Component {
   render() {
