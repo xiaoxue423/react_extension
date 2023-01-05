@@ -6,7 +6,7 @@ export default class App extends Component {
     return (
       <div>
         <h1>我是App组件</h1>
-        <Demo />
+        <Demo x={101}/>
       </div>
     );
   }
