@@ -27,7 +27,7 @@ function Demo() {
 
   useEffect(()=>{
     console.log('@')
-  },[count])//空数组代表谁也不监测
+  },[count,name])//空数组代表谁也不监测
 
   function add() {
     // setCount(count+1) //第一种写法
