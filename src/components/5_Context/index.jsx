@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { Component,createContext } from "react";
 import "./index.css";
 
 //创建Context容器对象
-const MyContext = React.createContext();
+const MyContext = createContext();
 
 const { Provider, Consumer } = MyContext;
 
@@ -25,11 +25,14 @@ export default class A extends Component {
 }
 
 class B extends Component {
+  static contextType = MyContext;  //声明接收context
+
   render() {
+    const { username, age } = this.context;
     return (
       <div className="son">
         <h1>我是B组件</h1>
-        <h2>我从A组件接收到的用户名是：{this.props.username}</h2>
+        <h2>我从A组件接收到的用户名是：{username}，年龄是：{age}</h2>
         <C />
       </div>
     );

@@ -14,8 +14,10 @@ export default class Parent extends Component {
     };
   }
 
-  componentDidCatch(){
+  componentDidCatch(error,info){
     console.log('此处统计错误，反馈给服务器，用于通知编码人员进行bug的解决')
+    console.log('error******',error);
+    console.log('info',info)
   }
 
   render() {

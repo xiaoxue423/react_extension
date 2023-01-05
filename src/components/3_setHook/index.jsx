@@ -58,6 +58,7 @@ function Demo() {
 
   function add() {
     // setCount(count+1) //第一种写法
+    
     setCount((count) => {
       //第二种写法函数形式
       return count + 1;
