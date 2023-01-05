@@ -23,7 +23,7 @@ class A extends PureComponent {
     return (
       <div className="A">
         <h1>我是A组件</h1>
-        {this.props.render(name)}
+        {this.props.render(name)}  
       </div>
     );
   }

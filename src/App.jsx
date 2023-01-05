@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import Demo from "./components/7_renderProps/index";
+import Demo from "./components/8_Error/Parent";
 
 export default class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Demo x={101}/> */}
         <Demo/>
       </div>
     );
