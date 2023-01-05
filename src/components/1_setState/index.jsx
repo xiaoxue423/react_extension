@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import './index.css';
 
 export default class Demo extends Component {
   state = { count: 0 };
@@ -24,7 +25,7 @@ export default class Demo extends Component {
 
   render() {
     return (
-      <div>
+      <div className="demo">
         <h1>我是Demo组件</h1>
         <h2>当前求和为：{this.state.count}</h2>
         <button onClick={this.add}>点我+1</button>
