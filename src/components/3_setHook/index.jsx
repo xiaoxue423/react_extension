@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 // class Demo extends React.Component {
 //   state = { count: 0 };
@@ -23,21 +23,25 @@ import React, { useState,useEffect } from "react";
 
 function Demo() {
   const [count, setCount] = useState(5);
-  const [name, setName] = useState('tom');
+  const [name, setName] = useState("tom");
 
-  useEffect(()=>{
-    console.log('@')
-  },[])//空数组代表谁也不监测，相当于componentDidMount生命周期钩子
+  useEffect(() => {
+    console.log("@");
+    setInterval(() => {
+      setCount((count) => count + 1);
+    }, 1000);
+  }, []); //空数组代表谁也不监测，相当于componentDidMount生命周期钩子
 
   function add() {
     // setCount(count+1) //第一种写法
-    setCount((count) => { //第二种写法
+    setCount((count) => {
+      //第二种写法函数形式
       return count + 1;
     });
   }
 
-  function changeName(){
-    setName('jack')
+  function changeName() {
+    setName("jack");
   }
   return (
     <div>
