@@ -1,0 +1,7 @@
+.child{
+  border: 1px solid red;
+}
+.parent{
+background-color:pink;
+padding: 20px;
+}
