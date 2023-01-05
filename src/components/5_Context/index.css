@@ -1,0 +1,14 @@
+.parent{
+  width: 500px;
+  background-color: bisque;
+  padding: 8px;
+}
+.son{
+  width: 400px;
+  border: 1px solid red;
+}
+
+.grand{
+  width: 100%;
+  background-color: yellow;
+}
