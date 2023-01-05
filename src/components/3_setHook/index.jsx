@@ -27,7 +27,7 @@ function Demo() {
 
   useEffect(()=>{
     console.log('@')
-  },[count,name])//空数组代表谁也不监测
+  },[])//空数组代表谁也不监测，相当于componentDidMount生命周期钩子
 
   function add() {
     // setCount(count+1) //第一种写法
