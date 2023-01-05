@@ -23,6 +23,7 @@ import React, { useState,useEffect } from "react";
 
 function Demo() {
   const [count, setCount] = useState(5);
+  const [name, setName] = useState('tom');
 
   useEffect(()=>{
     console.log('@')
@@ -34,11 +35,17 @@ function Demo() {
       return count + 1;
     });
   }
+
+  function changeName(){
+    setName('jack')
+  }
   return (
     <div>
       <h1>我是Demo的函数式组件</h1>
       <h2>当前求和为：{count}</h2>
       <button onClick={add}>点我+1</button>
+      <h2>我的名字是：{name}</h2>
+      <button onClick={changeName}>点我修改名字</button>
     </div>
   );
 }
