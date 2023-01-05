@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Demo from "./components/6_optimize/index";
+import Demo from "./components/7_renderProps/index";
 
 export default class App extends Component {
   render() {
