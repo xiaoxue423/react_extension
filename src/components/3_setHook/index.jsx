@@ -19,21 +19,27 @@ import React, { Component, useState } from "react";
 // }
 
 function Demo() {
-  console.log("Demo");
   const [count, setCount] = useState(5);
+  const [name, setName] = useState('tom');
 
   function add() {
     // setCount(count+1) //第一种写法
-
     setCount((count) => { //第二种写法
       return count + 1;
     });
   }
+
+  function changeName(){
+    setName('Jack')
+  }
+  
   return (
     <div>
       <h1>我是Demo组件</h1>
       <h2>当前求和为：{count}</h2>
       <button onClick={add}>点我+1</button>
+      <h2>我的名字是：{name}</h2>
+      <button onClick={changeName}>点我修改名字</button>
     </div>
   );
 }
